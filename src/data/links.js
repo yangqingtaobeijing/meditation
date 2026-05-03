@@ -101,17 +101,17 @@ export const chineseLinks = [
     },
   },
   {
-    id: 'xiashuimian',
-    name: '小睡眠',
-    url: 'https://www.xiashuimian.com',
-    icon: '😴',
+    id: 'ximalaya',
+    name: '喜马拉雅',
+    url: 'https://www.ximalaya.com',
+    icon: '🎧',
     zh: {
-      description: '专注于睡眠和放松的应用，提供白噪音、冥想引导和睡眠监测。帮助改善睡眠质量。',
-      category: '应用',
+      description: '中国最大的音频平台，拥有海量冥想引导、白噪音、助眠音乐和心灵成长内容。免费资源丰富。',
+      category: '平台',
     },
     en: {
-      description: 'Focused on sleep and relaxation, offering white noise, meditation guidance, and sleep monitoring. Helps improve sleep quality.',
-      category: 'App',
+      description: 'China\'s largest audio platform with massive meditation guides, white noise, sleep music, and spiritual growth content. Rich free resources.',
+      category: 'Platform',
     },
   },
   {
@@ -129,17 +129,17 @@ export const chineseLinks = [
     },
   },
   {
-    id: 'simplemeditation',
-    name: '简单冥想',
-    url: 'https://simplemeditation.cn',
-    icon: '🪷',
+    id: 'yoga51',
+    name: '51瑜伽',
+    url: 'https://www.51yoga.com',
+    icon: '🧘‍♀️',
     zh: {
-      description: '倡导简单生活方式的冥想社区，提供冥想入门教程、线下活动和冥想空间推荐。',
-      category: '社区',
+      description: '专业的瑜伽与冥想在线平台，提供瑜伽课程、冥想引导和健康资讯。涵盖多种流派和难度级别。',
+      category: '平台',
     },
     en: {
-      description: 'A meditation community advocating simple living, offering beginner tutorials, offline events, and meditation space recommendations.',
-      category: 'Community',
+      description: 'A professional yoga and meditation online platform offering yoga courses, meditation guidance, and health information. Covers multiple styles and difficulty levels.',
+      category: 'Platform',
     },
   },
 ]
