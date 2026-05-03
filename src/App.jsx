@@ -63,7 +63,7 @@ function AppContent() {
 
 export default function App() {
   return (
-    <Router>
+    <Router basename="/meditation">
       <ThemeProvider>
         <LanguageProvider>
           <AppContent />
