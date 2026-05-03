@@ -1,0 +1,110 @@
+@import "tailwindcss";
+
+@theme {
+  --color-sage: #7C9A82;
+  --color-sage-light: #A3BFA8;
+  --color-sage-dark: #5A7A60;
+  --color-sand: #D4C5A9;
+  --color-sand-light: #E8DCC8;
+  --color-terracotta: #C4856A;
+  --color-terracotta-light: #D9A48E;
+  --color-cream: #FAF8F5;
+  --color-charcoal: #2D2D2D;
+  --color-dark-bg: #1A1A2E;
+  --color-dark-surface: #16213E;
+  --color-dark-card: #1E2A45;
+
+  --font-serif: 'Noto Serif SC', 'Playfair Display', Georgia, serif;
+  --font-sans: 'Noto Sans SC', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  .dark body {
+    background-color: var(--color-dark-bg);
+    color: #E8E8E8;
+  }
+
+  ::selection {
+    background-color: var(--color-sage);
+    color: white;
+  }
+}
+
+@layer components {
+  .page-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+
+  .section-title {
+    font-family: var(--font-serif);
+    font-size: 2.25rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+
+  .section-subtitle {
+    font-size: 1.125rem;
+    opacity: 0.75;
+    margin-bottom: 3rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .card-hover {
+    transition: all 0.3s ease;
+  }
+
+  .card-hover:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 40px -12px rgba(0, 0, 0, 0.15);
+  }
+
+  .breathing {
+    animation: breathing 4s ease-in-out infinite;
+  }
+
+  @keyframes breathing {
+    0%, 100% { transform: scale(1); opacity: 0.6; }
+    50% { transform: scale(1.1); opacity: 1; }
+  }
+
+  .gradient-overlay {
+    background: linear-gradient(135deg, rgba(124, 154, 130, 0.1), rgba(212, 197, 169, 0.1));
+  }
+
+  .dark .gradient-overlay {
+    background: linear-gradient(135deg, rgba(124, 154, 130, 0.05), rgba(212, 197, 169, 0.05));
+  }
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-sage-light);
+  border-radius: 4px;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: var(--color-sage-dark);
+}
